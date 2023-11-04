@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 
 import "./styles.css";
@@ -8,6 +9,7 @@ export default function City() {
   function handleResponse(response) {
     setCityData({
       ready: true,
+      date: new Date(response.data.time * 1000),
       city: response.data.city,
       description: response.data.condition.description,
       iconUrl: `https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`,
@@ -27,7 +29,9 @@ export default function City() {
 
         <div className="row">
           <div className="datesky col-lg-12">
-            <li id="today"></li>
+            <li id="today">
+              <FormattedDate date={cityData.date} />
+            </li>
             <strong>
               <li className="text-capitalize">{cityData.description}</li>
             </strong>
