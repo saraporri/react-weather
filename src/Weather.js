@@ -14,7 +14,7 @@ export default function Weather() {
             <Form />
             <City />
             <Current />
-            <div className="weather-forecast" id="forecast"></div>
+            <div className="weather-forecast"></div>
           </div>
           <Footer />
         </div>

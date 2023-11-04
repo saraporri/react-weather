@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./styles.css";
 
 export default function Form() {
@@ -10,7 +11,6 @@ export default function Form() {
         className="enter-city"
         autoComplete="off"
         autoFocus="on"
-        id="load-city"
       />
       <input type="submit" value="Search" className="btn btn-primary" />
       <button id="current-location" className="btn btn-primary">
