@@ -1,6 +1,4 @@
-import Form from "./Form";
-import City from "./City";
-import Current from "./Current";
+import SearchEngine from "./SearchEngine";
 import Footer from "./Footer";
 
 import "./styles.css";
@@ -11,9 +9,7 @@ export default function Weather() {
       <div className="container">
         <div className="card">
           <div className="card-body">
-            <Form />
-            <City />
-            <Current />
+            <SearchEngine defaultCity="Rome" />
             <div className="weather-forecast"></div>
           </div>
           <Footer />
