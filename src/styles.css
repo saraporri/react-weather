@@ -88,3 +88,9 @@ footer {
 .datesky {
   text-align: left;
 }
+canvas {
+  margin-left: 50px;
+  margin-top: 5px;
+  display: inline-flex;
+  line-height: 20px;
+}
