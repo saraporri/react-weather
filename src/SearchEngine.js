@@ -54,9 +54,6 @@ export default function SearchEngine(props) {
             onChange={handleCityChange}
           />
           <input type="submit" value="Search" className="btn btn-primary" />
-          <button id="current-location" className="btn btn-primary">
-            Current
-          </button>
         </form>
         <WeatherInfo data={weatherData} />
       </div>
