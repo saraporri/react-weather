@@ -4,6 +4,7 @@ import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 
 import "./styles.css";
+import WeatherForecast from "./WeatherForecast";
 
 export default function SearchEngine(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -12,6 +13,7 @@ export default function SearchEngine(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
+      coordinates: response.data.coordinates,
       temperature: response.data.temperature.current,
       wind: response.data.wind.speed,
       humidity: response.data.temperature.humidity,
@@ -56,6 +58,7 @@ export default function SearchEngine(props) {
           <input type="submit" value="Search" className="btn btn-primary" />
         </form>
         <WeatherInfo data={weatherData} />
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
