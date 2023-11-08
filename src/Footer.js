@@ -11,7 +11,14 @@ export default function Footer() {
       >
         Open-source code
       </a>
-      , by Sara Porricino
+      , by{" "}
+      <a
+        href="https://www.linkedin.com/in/sara-p-665919103/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Sara Porricino
+      </a>
     </footer>
   );
 }

@@ -23,6 +23,7 @@ export default function WeatherInfo(props) {
         <div className="col-md-auto">
           <img
             src="https://media.tenor.com/-xDmnwIkR8AAAAAi/ffxiv-pusheen.gif"
+            className="kitty-img"
             alt="kitty"
             width={120}
           />
