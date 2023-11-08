@@ -1,5 +1,4 @@
 import SearchEngine from "./SearchEngine";
-import WeatherForecast from "./WeatherForecast";
 import Footer from "./Footer";
 
 import "./styles.css";
@@ -11,9 +10,7 @@ export default function Weather() {
         <div className="card">
           <div className="card-body">
             <SearchEngine defaultCity="Rome" />
-            <div className="weather-forecast">
-              <WeatherForecast />
-            </div>
+            <div className="weather-forecast"></div>
           </div>
           <Footer />
         </div>

@@ -63,6 +63,12 @@ export default function SearchEngine(props) {
     );
   } else {
     search();
-    return "LOADING";
+    return (
+      <img
+        src="https://media.tenor.com/J7GBdx1T2q4AAAAi/pusheen-detective.gif"
+        alt="Loading"
+        width={400}
+      />
+    );
   }
 }

@@ -12,7 +12,7 @@ export default function WeatherInfo(props) {
       </div>
 
       <div className="row">
-        <div className="datesky col-lg-12">
+        <div className="datesky col-lg-6">
           <li id="today">
             <FormattedDate date={props.data.date} />
           </li>
@@ -20,7 +20,13 @@ export default function WeatherInfo(props) {
             <li className="text-capitalize">{props.data.description}</li>
           </strong>
         </div>
-        <div className="col-md-auto"></div>
+        <div className="col-md-auto">
+          <img
+            src="https://media.tenor.com/-xDmnwIkR8AAAAAi/ffxiv-pusheen.gif"
+            alt="kitty"
+            width={120}
+          />
+        </div>
       </div>
 
       <h2>
