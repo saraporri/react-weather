@@ -11,3 +11,11 @@
   opacity: 0.8;
   margin-left: 5px;
 }
+canvas {
+  display: inline-flex;
+  margin: 0px 20px 0px 20px;
+}
+.WeatherForecast-day,
+.WeatherForecast-temperature {
+  margin: 0px 20px 0px 20px;
+}

@@ -1,5 +1,5 @@
 .container-wrapper {
-  max-width: 600px;
+  max-width: 700px;
   margin: 20px auto;
 }
 .container {
@@ -33,16 +33,13 @@ h2,
   font-family: "PT Serif", serif;
 }
 .row {
-  text-align: right;
   font-size: 17px;
   list-style-type: none;
 }
 .row ::first-letter {
   text-transform: capitalize;
 }
-.main-icon {
-  float: right;
-}
+
 .units .active {
   color: rgb(33, 33, 33);
   cursor: default;
@@ -69,17 +66,7 @@ footer {
   font-size: 12px;
   text-align: right;
 }
-.weather-forecast-date {
-  font-weight: bolder;
-  font-size: 15px;
-  opacity: 0.8;
-}
-.weather-forecast-temp {
-  font-size: 13px;
-}
-.weather-forecast-min-temp {
-  opacity: 0.8;
-}
+
 .humiwind {
   list-style: none;
   margin-top: 10px;
@@ -88,8 +75,4 @@ footer {
 }
 .datesky {
   text-align: left;
-}
-canvas {
-  margin-left: 50px;
-  display: inline-flex;
 }
