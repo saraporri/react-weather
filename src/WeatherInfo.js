@@ -10,7 +10,6 @@ export default function WeatherInfo(props) {
         <p className="main-city">{props.data.city}</p>
         <WeatherIcon code={props.data.icon} size={90} />
       </div>
-
       <div className="row">
         <div className="datesky col-lg-6">
           <li id="today">
@@ -20,6 +19,7 @@ export default function WeatherInfo(props) {
             <li className="text-capitalize">{props.data.description}</li>
           </strong>
         </div>
+
         <div className="col-md-auto">
           <img
             src="https://media.tenor.com/-xDmnwIkR8AAAAAi/ffxiv-pusheen.gif"
