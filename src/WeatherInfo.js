@@ -16,7 +16,9 @@ export default function WeatherInfo(props) {
             <FormattedDate date={props.data.date} />
           </li>
           <strong>
-            <li className="text-capitalize">{props.data.description}</li>
+            <li className="text-capitalize description">
+              {props.data.description}
+            </li>
           </strong>
         </div>
 
